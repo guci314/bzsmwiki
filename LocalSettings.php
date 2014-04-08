@@ -142,3 +142,6 @@ $wgCategoryTreeForceHeaders = true;
 
 #CategorySuggest
 require_once("$IP/extensions/CategorySuggest/CategorySuggest.php");
+
+#InputBox
+require_once( "$IP/extensions/InputBox/InputBox.php" );
