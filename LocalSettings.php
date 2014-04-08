@@ -125,14 +125,20 @@ $wgDiff3 = "";
 # Add more configuration options below.
 
 
-#require_once( "$IP/extensions/WikiEditor/WikiEditor.php" );
+require_once( "$IP/extensions/WikiEditor/WikiEditor.php" );
 
 # Enables use of WikiEditor by default but still allow users to disable it in preferences
-#$wgDefaultUserOptions['usebetatoolbar'] = 1;
-#$wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
+$wgDefaultUserOptions['usebetatoolbar'] = 1;
+$wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
  
 # Displays the Preview and Changes tabs
-#$wgDefaultUserOptions['wikieditor-preview'] = 1;
+$wgDefaultUserOptions['wikieditor-preview'] = 1;
  
 # Displays the Publish and Cancel buttons on the top right side
-#$wgDefaultUserOptions['wikieditor-publish'] = 1;
+$wgDefaultUserOptions['wikieditor-publish'] = 1;
+
+$wgUseAjax = true;
+require_once( "$IP/extensions/CategoryTree/CategoryTree.php" );
+$wgCategoryTreeSidebarRoot = 'Category:Object';
+$wgCategoryTreeForceHeaders = true;
+
